@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+
+.main {
+    width: 100%;
+    background: url(1.jpg) no-repeat center center/cover;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar {
+    max-width: 1200px;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.icon {
+    width: 200px;
+}
+
+.logo {
+    color: #ff7200;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    margin: 10px 20px;
+    font-size: 14px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover {
+    color: #ff7200;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 330px;
+    margin-top: 13px;
+}
+
+.srch {
+    flex: 1;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #ff7200;
+    border-right: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    outline: none;
+}
+
+.btn {
+    height: 40px;
+    background: #ff7200;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #ff7200;
+    border-left: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    padding: 0 20px;
+    outline: none;
+}
+
+
+.btn:hover {
+    color: #000;
+}
+
+.btn:focus,
+.srch:focus {
+    outline: none;
+}
+
+.content {
+    max-width: 1200px;
+    width: 100%;
+    margin: 40px auto;
+    text-align: left;
+    position: relative;
+    padding: 0 20px;
+}
+
+.content h1 {
+    font-size: 50px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+
+.content .par {
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    margin: 20px 0;
+}
+
+.content .cn {
+    width: 160px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.content .cn a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+
+.cn:hover {
+    background-color: #fff;
+}
+
+.content span {
+    color: #ff7200;
+    font-size: 65px;
+}
+
+.form {
+    width: 250px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.8) 50%);
+    border-radius: 10px;
+    padding: 25px;
+    position: absolute;
+    top: -20px;
+    right: 0;
+}
+
+.form h2 {
+    background-color: #fff;
+    color: #ff7200;
+    text-align: center;
+    padding: 8px;
+    font-size: 22px;
+    border-radius: 10px;
+}
+
+.form input {
+    width: 100%;
+    height: 35px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ff7200;
+    color: #fff;
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+.btnn {
+    width: 100%;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 30px;
+    transition: 0.4s ease;
+}
+
+.btnn:hover {
+    background: #fff;
+    color: #ff7200;
+}
+
+.btnn a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.form .link {
+    text-align: center;
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+.form .link a {
+    text-decoration: none;
+    color: #ff7200;
+}
+
+.liw {
+    text-align: center;
+    padding-top: 15px;
+}
+
+
+.icons img {
+    width: 50px;  
+    height: 40px; 
+    padding: 5px;
+    transition: 0.3s ease;
+    filter: grayscale(100%) brightness(100%) invert(100%); 
+    object-fit: contain; 
+}
+
+
+.icons img.ion-icon:hover {
+    filter: grayscale(0%) brightness(100%) invert(0%); 
+}
+
+
+/* ===================== Responsive ===================== */
+
+@media screen and (max-width: 1024px) {
+    .form {
+        position: static;
+        margin: 30px auto;
+        transform: none;
+        width: 500px;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .content h1,
+    .content span {
+        font-size: 6vw;
+    }
+
+    .content .par {
+        font-size: 1.2em;
+        line-height: 1.6em;
+    }
+
+    .content .cn {
+        margin: 0 auto 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .search {
+        justify-content: flex-start;
+        margin-top: 10px;
+    }
+
+    ul {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    ul li {
+        margin: 8px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+        .logo {
+            font-size: 6vw;
+            text-align: center;
+            margin: 10px auto;
+        }
+
+        .navbar {
+            align-items: center;
+        }
+
+        
+        .search {
+            align-items: center;
+            justify-content: space-between;
+
+            width: 100%;
+            
+        }
+
+        
+        .content .cn {
+            width: 60%;
+            font-size: 1em;
+            height: 45px;
+        }
+
+        .form {
+            width: 430px;
+            margin-top: 40px;
+        }
+    }
+    
+
+@media screen and (max-width: 500px) {
+    .logo {
+        font-size: 7vw;
+    }
+
+    .content h1,
+    .content span {
+        font-size: 8vw;
+    }
+
+    .srch, .btn {
+        width: auto;
+    }
+
+    .form input {
+        font-size: 14px;
+    }
+
+    .btnn {
+        font-size: 16px;
+    }
+    .form{
+        width: 330px;
+    }
+}
+@media screen and (max-width: 400px){
+    .form{
+        width: 250px;
+    }
+    .search{
+        width: 100%;
+    }
+}
